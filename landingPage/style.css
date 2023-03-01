@@ -1,0 +1,149 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;;
+}
+
+main{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.left-container
+{
+  background-color: #fce5b9;
+  width: 40vw;
+  height: 100%;
+  background-image: url(https://1.bp.blogspot.com/-jMt5FvlquUY/XSiKag0gMJI/AAAAAAAAE3E/--gmKXzBy8okMpy7a7GTh_h_otBExVXuQCLcBGAs/s1600/ALMOSTABLOGGER-CEBU-BLOGGER-COFFEETERIA-COFFEE-SHOPS.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.right-container
+{
+  background-color: #c5ad9b;
+  width: 60vw;
+  height: 100%;
+}
+
+.text-container{
+  font-size: 40px;
+  margin: 100px auto 0 auto;
+  text-align: center;
+  width: 100%;
+  color: #3f2018;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 300px;
+  min-height: 200px;
+  border-radius: 10px;
+  margin: 100px auto;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  background-color: #fff;
+  box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.363);
+}
+
+.input-container
+{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.input-icon
+{
+  position: relative;
+}
+
+.input-icon i
+{
+  margin-top: 5px;
+  height: 30px;
+  border-right: none;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  border-radius: 5px 0 0 5px;
+  color: #3f2018;
+}
+
+.input-icon input{
+  padding-left: 30px;
+  border: none;
+  border-bottom: 1px solid #3f2018;
+  margin-top: 5px;
+  height: 30px;
+}
+
+#senha-input
+{
+  font-family: 'Courier New', Courier, monospace, Helvetica, sans-serif;
+}
+
+#btn
+{
+  margin-top: 20px;
+  height: 30px;
+  width: 100px;
+  border-radius: 5px;
+  border: none;
+  background-color: #3f2018;
+  color: #fff;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+#btn:hover{
+  transform: scale(1.03);
+}
+
+@media(max-width: 540px) {
+  main{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .left-container, 
+  .right-container{
+    width: 100%;
+  }
+  .left-container{
+    height: 40vh;
+    background-position: bottom center;
+  }
+}
+
+.error-text-container
+{
+  color: red;
+  font-size: 15px;
+}
+
+.hide
+{
+  display: none;
+}
+
+.error{
+  border: 1px solid red;
+  border-radius: 3px;
+  animation: kf_shake 0.3s 1 linear;
+}
+
+@keyframes kf_shake {
+  0% { -webkit-transform: translate(30px); }
+  20% { -webkit-transform: translate(-30px); }
+  40% { -webkit-transform: translate(15px); }
+  60% { -webkit-transform: translate(-15px); }
+  80% { -webkit-transform: translate(8px); }
+  100% { -webkit-transform: translate(0px); }
+}

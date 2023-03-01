@@ -1,0 +1,17 @@
+{
+  "users": [
+    {
+      "email": "ian@gmail.com",
+      "password": "123456"
+    },
+    {
+      "email": "teste@gmail.com",
+      "password": "abc123"
+    },
+    {
+      "email": "jose@gmail.com",
+      "password": "789"
+    }
+  ]
+
+}
